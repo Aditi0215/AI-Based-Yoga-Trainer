@@ -224,7 +224,7 @@ pose_images = {
 if selected_pose in pose_images:
     try:
         img = Image.open(pose_images[selected_pose])
-        st.image(img, caption=f"{selected_pose} Guide", use_column_width= True)
+        st.image(img, caption=f"{selected_pose} Guide", use_container_width= True)
     except Exception as e:
         st.warning(f"Image for {selected_pose} not found or cannot be loaded.")
 
